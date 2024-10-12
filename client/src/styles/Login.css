@@ -1,0 +1,127 @@
+.main-container {
+    background-image: url(../assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    height: 100%;
+  }
+  
+  @font-face {
+    font-family: neural-gotesk;
+    src: url(./fonts/Demo_Fonts/Fontspring-DEMO-neurialgrotesk-regular.otf);
+    src: url(../fonts/Demo_Fonts/Fontspring-DEMO-neurialgrotesk-bold.otf);
+  }
+  
+  .form-container {
+    background: white;
+    width: 100%;
+    max-width: 642px;
+    padding: 1rem 5rem;
+    border-radius: 15px;
+    margin: 4rem;
+  }
+  
+  .form-container h2 {
+    font-family: neural-gotesk;
+    font-weight: 700;
+    font-size: 28px;
+  }
+  
+  .form-container p {
+    font-family: neural-gotesk;
+    font-weight: 400;
+    font-size: 16px;
+    color: #181a20d1;
+  }
+  
+  .btn-2 {
+    height: 50px;
+    background-color: white;
+    color: #292929;
+    font-weight: 600;
+    font-family: neurial-grotesk;
+    border: 1px solid #000000;
+    border-radius: 15px;
+  }
+  
+  .btn-1 {
+    height: 50px;
+    font-weight: 300;
+    background-color: #8d34ff;
+    color: white;
+    font-family: neurial-grotesk;
+    border: none;
+    border-radius: 15px;
+  }
+  
+  .divider {
+    margin-left: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .divider p {
+    /* margin-top:50px; */
+    display: flex;
+  }
+  /* input[type=checkbox]{
+    accent-color: green;
+  } */
+  
+  .group {
+    font-family: Neurial Grotesk;
+    font-weight: 400;
+    font-size: 16px;
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .divider p:before,
+  .divider p:after {
+    color: white;
+    content: '';
+    flex: 1;
+    border-bottom: groove 2px;
+    margin: auto 0.25em;
+    box-shadow: 0 -1px; /* ou 0 1px si border-style:ridge */
+  }
+  h4 {
+    font-family: neurial-grotesk;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 2rem;
+  }
+  
+  .link {
+    text-decoration: none;
+  
+    color: #8d34ff;
+  }
+  
+  @media (max-width: 465px) {
+    .main-container {
+      height: 100vh;
+      background: white;
+      margin: 0;
+    }
+    .form-container {
+      width: 100%;
+      max-width: 342px;
+      padding: 1rem 1rem;  }
+    /* .divider {
+      margin-right: 32rem;
+    } */
+  
+    .divider p {
+      font-size: 1.5em;
+    }
+  
+    .divider p:before,
+    .divider p:after {
+      flex: none;
+      width: 95px;
+      margin: 1rem 0.5em;
+    }
+  }
